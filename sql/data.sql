@@ -1,3 +1,5 @@
+CREATE DATABASE tugasci3;
+
 CREATE TABLE IF NOT EXISTS `program_studi` (
 `id` int(10) NOT NULL AUTO_INCREMENT,
 `nama_prodi` varchar(255) NOT NULL,
@@ -125,10 +127,10 @@ CREATE TABLE IF NOT EXISTS `nilai` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO `nilai` (`taruna`, `nilai_angka`,`nilai_huruf`, `mata_kuliah`) VALUES
-	(1, 70, 'Tujuh Puluh', 2),
-	(2, 80, 'Delapan Puluh', 1),
-  (3, 90, 'Sembilan Puluh', 3),
-  (2, 75, 'Tujuh Puluh Lima', 1);
+	(1, 70, 'C', 2),
+	(2, 80, 'B', 1),
+  (3, 90, 'A', 3),
+  (2, 75, 'A', 1);
 
 CREATE TABLE IF NOT EXISTS `transkrip_nilai` (
 `id` int(10) NOT NULL AUTO_INCREMENT,
