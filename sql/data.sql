@@ -1,4 +1,6 @@
-CREATE DATABASE tugasci3;
+--
+-- Database: `tugasci3`
+--
 
 CREATE TABLE IF NOT EXISTS `program_studi` (
 `id` int(10) NOT NULL AUTO_INCREMENT,
