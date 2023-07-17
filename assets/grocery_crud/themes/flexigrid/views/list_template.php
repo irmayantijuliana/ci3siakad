@@ -184,13 +184,12 @@ if($success_message !== null){?>
 	</div>
 	<?php echo form_close(); ?>
 	</div>
-	<div class="tDiv2">
-		<a href='<?php base_url()?>' title='Back' class='add-anchor add_button'>
-		<div class="fbutton">
-			<div>
-				<span class="delete"><?php base_url() ?> Back</span>
-			</div>
+	<div class="pDiv">
+		<div class='form-button-box'>
+		<a href='<?php base_url()?>' title='Back'>
+			<input type='button' value='<?php echo $this->l('form_cancel'); ?>' class="btn btn-large back-to-list" id="cancel-button" />
 		</div>
-		</a>
+		<div class='clear'></div>
 	</div>
+	<?php echo form_close(); ?>
 </div>
