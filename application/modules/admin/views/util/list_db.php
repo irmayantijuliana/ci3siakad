@@ -20,7 +20,7 @@
 				</tr>
 				<tr>
 					<td><b>Latest</b></td>
-					<td><?php echo FCPATH.'sql/latest.sql'; ?></td>
+					<td><?php echo FCPATH.'sql\latest.sql'; ?></td>
 					<td><a href="util/restore_db/latest" class="btn btn-primary">Restore</a></td>
 				</tr>
 				<?php foreach ($backup_sql_files as $file): ?>
