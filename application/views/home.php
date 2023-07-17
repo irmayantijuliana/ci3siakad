@@ -53,6 +53,12 @@
             <a href="transkrip"><img src="<?= base_url() ?>assets/images/student.png" class="img-responsive" width="100"></a>
         </center>
     </div>
+    <div class="col-md-4">
+        <center>
+            <h4>Print</h4>
+            <a href="about"><img src="<?= base_url() ?>assets/images/student.png" class="img-responsive" width="100"></a>
+        </center>
+    </div>
     </div>
     </div>
 </div>

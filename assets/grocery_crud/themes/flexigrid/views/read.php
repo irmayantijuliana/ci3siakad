@@ -59,6 +59,9 @@
 		<div class='form-button-box'>
 			<div class='small-loading' id='FormLoading'><?php echo $this->l('form_update_loading'); ?></div>
 		</div>
+		<div class="container" align="right" class="print-screen">
+        <button onClick="print()" class="btn btn-primary btn-lg print-screen">Cetak</button>
+    	</div>
 		<div class='clear'></div>
 	</div>
 	<?php echo form_close(); ?>
