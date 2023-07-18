@@ -8,13 +8,14 @@ class About extends MY_Controller {
 	public function __construct()
     {
         parent::__construct();
-        $this->load->model('M_ijazah');
+        $this->load->model('m_ijazah');
+		$this->load->model('m_pejabat');
     }
 	private static $table = 'ijazah';
 	public function index()
 	{
 		$id_ijazah = isset($_GET['id_ijazah']) ? $_GET['id_ijazah'] : 1;//null;
-		$data['ijazah'] = $this->M_ijazah->get_ijazah($id_ijazah);
+		$data['ijazah'] = $this->m_ijazah->get_ijazah($id_ijazah);
 	    $this->db->select('*')->from('ijazah');
         $this->db->where('id', $id_ijazah);
         $data = $this->db->get();
@@ -39,7 +40,15 @@ class About extends MY_Controller {
 		$this->db->select('*')->from('pejabat');
         $this->db->where('id', $id_direk);
         $data_pejabat = $this->db->get();
-        $this->mViewData['data_pejabat'] = $data_pejabat->row();
+		$this->mViewData['data_pejabat'] = $data_pejabat->row();
+		$where = "id = '$id_direk'";
+		$where2 = "id = '$id_wadirek'";
+		$pejabat = $this->m_pejabat->get_pejabat($where);
+		$pejabat2 = $this->m_pejabat->get_pejabat($where2);
+		$this->mViewData['direk'] = $pejabat['nama'];
+		$this->mViewData['wadirek'] = $pejabat2['nama'];
+		$this->mViewData['nip'] = $pejabat['nip'];
+		$this->mViewData['nip2'] = $pejabat2['nip'];
 		$this->render('about', 'empty');
 	}
 }
