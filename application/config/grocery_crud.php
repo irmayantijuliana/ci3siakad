@@ -54,8 +54,9 @@
 
 	// common fields to "display as"
 	$config['grocery_crud_display_as'] = array(
-	    'kota'				=> 'Data Kota',
-		'mata_kuliah'		=> 'Data Mata Kuliah',
+	    'ijazah'			=> 'Data Ijazah',
+		'kota'				=> 'Data Kota',
+		'matakuliah'		=> 'Data Mata Kuliah',
 		'nilai'				=> 'Data Nilai',
 		'program_studi'		=> 'Program Studi',
 		'pejabat'			=> 'Data Pejabat',

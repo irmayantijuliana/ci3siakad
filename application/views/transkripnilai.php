@@ -1,17 +1,17 @@
 <?php
         // DATA MATA KULIAH
-        $no_sk = isset($data_ijazah->nomor_sk) ? $data_ijazah->nomor_sk : '';
-        $no_ijazah = isset($data_ijazah->nomor_ijazah) ? $data_ijazah->nomor_ijazah : '';
-        $no_seri = isset($data_ijazah->nomor_seri) ? $data_ijazah->nomor_seri : '';
-        $tanggal_yudisium = isset($data_ijazah->tanggal_yudisium) ? $data_ijazah->tanggal_yudisium : '';
-        $tanggal_ijazah = isset($data_ijazah->tanggal_ijazah) ? $data_ijazah->tanggal_ijazah : '';
-        $nama_taruna = isset($data_taruna->nama) ? $data_taruna->nama : '';
-        $ttl = isset($data_kota->nama) ? $data_kota->nama : '';
-        $tanggal_lahir = isset($data_taruna->tanggal_lahir) ? $data_taruna->tanggal_lahir : '';
-        $no_taruna = isset($data_taruna->nomor_taruna) ? $data_taruna->nomor_taruna : '';
-        $propen = isset($data_prodi->program_pendidikan) ? $data_prodi->program_pendidikan : '';
-        $prodi = isset($data_prodi->nama_prodi) ? $data_prodi->nama_prodi : '';
-        $direk = isset($data_pejabat->nama) ? $data_pejabat->nama : '';
+        $no_sk = isset($data_ijazah->Nomor_SK) ? $data_ijazah->Nomor_SK : '';
+        $no_ijazah = isset($data_ijazah->Nomor_Ijazah) ? $data_ijazah->Nomor_Ijazah : '';
+        $no_seri = isset($data_ijazah->Nomor_Seri) ? $data_ijazah->Nomor_Seri : '';
+        $tanggal_yudisium = isset($data_ijazah->Tanggal_Yudisium) ? $data_ijazah->Tanggal_Yudisium : '';
+        $tanggal_ijazah = isset($data_ijazah->Tanggal_Ijazah) ? $data_ijazah->Tanggal_Ijazah : '';
+        $nama_taruna = isset($data_taruna->Nama) ? $data_taruna->Nama : '';
+        $ttl = isset($data_kota->Nama) ? $data_kota->Nama : '';
+        $tanggal_lahir = isset($data_taruna->Tanggal_Lahir) ? $data_taruna->Tanggal_Lahir : '';
+        $no_taruna = isset($data_taruna->Nomor_Taruna) ? $data_taruna->Nomor_Taruna : '';
+        $propen = isset($data_prodi->Program_Pendidikan) ? $data_prodi->Program_Pendidikan : '';
+        $prodi = isset($data_prodi->Nama) ? $data_prodi->Nama : '';
+        $direk = isset($data_pejabat->Nama) ? $data_pejabat->Nama : '';
     ?>
 <div class="container" align="right">
 <a class="btn btn-info pull-right mb hp" onclick="window.print()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a>

@@ -2,7 +2,7 @@
 
 class M_ijazah extends MY_Model {
     private static $table = 'ijazah';
-	private static $pk = 'id';
+	private static $pk = 'ID';
 
     public function is_exist($where)
 	{
