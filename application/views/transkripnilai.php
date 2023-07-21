@@ -11,7 +11,6 @@
         $no_taruna = isset($data_taruna->Nomor_Taruna) ? $data_taruna->Nomor_Taruna : '';
         $propen = isset($data_prodi->Program_Pendidikan) ? $data_prodi->Program_Pendidikan : '';
         $prodi = isset($data_prodi->Nama) ? $data_prodi->Nama : '';
-        $direk = isset($data_pejabat->Nama) ? $data_pejabat->Nama : '';
     ?>
 <div class="container" align="right">
 <a class="btn btn-info pull-right mb hp" onclick="window.print()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a>
@@ -30,12 +29,23 @@
             padding: 0!important;
         }
         .table.nilai{
+        border:2;
         width: 50%;
         text-align:center;
         text-transform: uppercase;
         }
         .table.nilai>tbody>tr>td{
 
+        }
+        .table.ttd{
+        text-align:center;
+        margin-left: 10%;
+        border-top:none;}
+        .table.ttd>tbody>tr>td{
+        font-family: "Calibri" ;
+        border-top:none;
+        margin-right:10px;
+        padding: 5px;
         }
         #data {
         text-align: justify;
@@ -100,6 +110,16 @@
         </table>
         <table class="table nilai">
         <tbody>
+        <!-- <?php foreach ($nilai as $nilai_data) : ?> 
+             <?php $matakuliah_data = $nilai_data->Matakuliah ?> 
+            <tr>
+                <td width="2%">NO</td>
+                <td>KODE</td>
+                <td>MATA KULIAH</td>
+                <td>SKS</td>
+                <td>NILAI</td>
+            </tr>
+             <?php endforeach; ?> -->
             <tr>
                 <td width="2%">NO</td>
                 <td>KODE</td>
@@ -115,8 +135,6 @@
                 <td></td>
             </tr>
             <tr>
-            <td><ol><li></li></<ol>
-            </td>
                 <td><?=$no_seri?></td>
                 <td><?=$no_seri?></td>
                 <td>2</td>
@@ -130,12 +148,46 @@
                 <td></td>
             </tr>
             <tr>
-            <td><ol><li></li></<ol>
-            </td>
                 <td><?=$no_seri?></td>
                 <td><?=$no_seri?></td>
                 <td>2</td>
                 <td>B</td>
+            </tr>
+            
+        </tbody>
+        </table>
+    <br />
+    <p align="left">KETERANGAN : A=4;AB=3,50;B=3;BC=2,50;C=2;D=1;E=0</p>
+    <br />
+    <table class="table ttd">
+        <tbody>
+            <tr>
+            <td></td>
+            <td style="font-family: Bookman Old Style;">Jakarta, <?= $tanggal_ijazah ?></td>
+            </tr>
+            <tr>
+                <td>WAKIL DIREKTUR</td>
+                <td>DIREKTUR</td>
+            </tr>
+            <tr>
+                <td>Politeknik XYZ</td>
+                <td>Politeknik XYZ</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><?php $direks?></td>
+                <!-- <td><?=$pejabat2?></td> -->
+            </tr>
+            <tr>
+                <!-- <td>NIP.<?=$nip?></td>
+                <td>NIP.<?=$nip2?></td> -->
             </tr>
         </tbody>
         </table>

@@ -16,7 +16,6 @@ class transkrip extends MY_Controller
 		
 		$crud->set_relation('Program_Studi', 'program_studi', '{Nama}');
         $crud->display_as('Program_Studi', 'Program Studi');
-		
         $this->mPageTitle = 'Data Transkrip Nilai';
         $this->render_crud();
 	}
